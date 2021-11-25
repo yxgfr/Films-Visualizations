@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script>
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    </head>
+    <style>
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+.highcharts-figure, .highcharts-data-table table {
+  min-width: 310px; 
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+#container {
+  height: 400px;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #EBEBEB;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+</style>
+<body>
+  
+  <figure class="highcharts-figure">
+  <div id="container" style="width: 1000px;height:800px;position:absolute;left:210px">
+    <script type="text/javascript">
+    Highcharts.chart('container', {
+  chart: {
+    type: 'column'
+  },
+  title: {
+    text: ''
+  },
+  xAxis: {
+    categories:  [
+      'Memento',"Insomnia", 'Batman Begins', 'The Prestige', 'The Dark Knight', 'Inception',"The Dark Knight Rises", 'Interstellar', 'Dunkirk',"Tenet",
+    ],
+  },
+  yAxis: [{
+    min: 0,
+    title: {
+      text: ''
+    }
+  }, {
+    title: {
+      text: 'Profit (millions)'
+    },
+    // opposite: true
+  }],
+  legend: {
+    shadow: false
+  },
+  tooltip: {
+    shared: true
+  },
+  plotOptions: {
+    column: {
+      grouping: false,
+      shadow: false,
+      borderWidth: 0
+    }
+  },
+  series: [{
+    name: 'Buget',
+    color: 'rgba(248,161,63,1)',
+    data: [9000000, 46000000, 150000000, 40000000, 185000000, 160000000, 250000000, 165000000, 100000000, 225000000 ],
+    tooltip: {
+      valuePrefix: '$',
+      valueSuffix: ' M'
+    },
+    pointPadding: 0.3,
+    pointPlacement: 0.2,
+    yAxis: 1
+  }, {
+    name: 'Gross',
+    color: 'rgba(186,60,61,.9)',
+    data: [39723096, 113758770, 373413297, 109676311, 1004934033, 829895144, 1081041287, 677471339, 526940665, 350000000],
+    tooltip: {
+      valuePrefix: '$',
+      // valueSuffix: ' M'
+    },
+    pointPadding: 0.4,
+    pointPlacement: 0.2,
+    yAxis: 1
+  }]
+});
+    </script>
+  </div>
+  <p class="highcharts-description">
+    
+  </p>
+</figure>
+
+ <div class="back" style="position: absolute; left: 180px; top: 830px">
+        <p>
+          <button type="button" class="btn btn-default btn-lg btn-block" style="width: 200px">
+            <a href="homepage.html">Back to HomePage</a>
+          </button>
+        </p>
+      </div>
+
+</body>
+
+</html>
+
+<!-- Resources -->
+<!-- <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+// Add data
+chart.data = [{
+  "country": "Memento",
+  "litres": 9000000,
+  "units": 39723096
+}, {
+  "country": "Insomnia",
+  "litres": 46000000,
+  "units": 113758770
+}, {
+  "country": "Batman Begins",
+  "litres": 150000000,
+  "units": 373413297
+}, {
+  "country": "The Prestige",
+  "litres": 40000000,
+  "units": 109676311
+}, {
+  "country": "The Dark Knight",
+  "litres": 185000000,
+  "units": 1004934033
+}, {
+  "country": "Inception",
+  "litres": 160000000,
+  "units": 829895144
+}, {
+  "country": "The Dark Knight Rises",
+  "litres": 250000000,
+  "units": 1081041287
+}, {
+  "country": "Interstellar",
+  "litres": 165000000,
+  "units": 677471339
+}, {
+  "country": "Dunkirk",
+  "litres": 100000000,
+  "units": 526940665
+},
+{
+  "country": "Tenet",
+  "litres": 225000000,
+  "units": 350000000
+}];
+
+// Create axes
+let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "country";
+categoryAxis.title.text = "Movies";
+
+let valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.title.text = "Balance ($)";
+
+var series2 = chart.series.push(new am4charts.LineSeries());
+series2.name = "Units";
+series2.stroke = am4core.color("#CDA2AB");
+// series2.strokeWidth = 3;
+series2.dataFields.valueY = "litres";
+series2.dataFields.categoryX = "country";
+series2.sequencedInterpolation = true;
+series2.strokeWidth = 4;
+// series2.tooltip.getFillFromObject = false;
+// series2.tooltip.getStrokeFromObject = true;
+// series2.tooltip.label.fill = am4core.color("#000");
+series2.stroke = chart.colors.getIndex(7);
+series2.fill = series2.stroke;
+
+var bullet2 = series2.bullets.push(new am4charts.CircleBullet())
+bullet2.fill = new am4core.InterfaceColorSet().getFor("background");
+bullet2.fillOpacity = 1;
+bullet2.strokeWidth = 4;
+bullet2.circle.radius = 4;
+
+// Create series
+var series = chart.series.push(new am4charts.LineSeries());
+series.dataFields.openValueY = "litres";
+series.dataFields.valueY = "units";
+series.dataFields.categoryX = "country";
+series.sequencedInterpolation = true;
+series.stroke = am4core.color("#1b7cb3");
+series.strokeWidth = 4;
+series.name = "litres";
+series.tooltipText = "budget: {openValueY.value}$ \n gross: {valueY.value}$";
+series.stroke = chart.colors.getIndex(0);
+series.fill = am4core.color("#c0c0c0")
+series.fillOpacity = 0.8;
+
+var bullet = series.bullets.push(new am4charts.CircleBullet())
+bullet.fill = new am4core.InterfaceColorSet().getFor("background");
+bullet.fillOpacity = 1;
+bullet.strokeWidth = 4;
+bullet.circle.radius = 4;
+
+
+
+chart.cursor = new am4charts.XYCursor();
+chart.cursor.xAxis = dateAxis;
+chart.scrollbarX = new am4core.Scrollbar();
+
+}); // end am4core.ready()
+</script>
+
+
+</html> 

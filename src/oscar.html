@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        
+        <script src="echarts.js"></script>
+         <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <style> 
+
+      .highcharts-figure, .highcharts-data-table table {
+    min-width: 360px; 
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 0px solid #808080;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #808080;
+}
+.highcharts-data-table th {
+  font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #808080;
+}
+.highcharts-data-table tr:hover {
+    background: #808080;
+}
+
+
+    </style>
+    <body>
+
+       <!-- <svg id="root" width="2280" height="800"> -->
+         <!-- <path class='link' d ="M 10 25 L 10 75  L 60 75 L 10 25" stroke = "red" stroke-width="2" stroke-dasharray= "0,10";/> -->
+       <!-- </svg> -->
+      <div id="main" style="width: 500px;height:1000px;left: 0px"></div>
+
+      <div class="back" style="position: absolute; left: 180px; top: 930px">
+        <p>
+          <button type="button" class="btn btn-default btn-lg btn-block">
+            <a href="homepage.html">Back to HomePage</a>
+          </button>
+        </p>
+      </div>
+
+      <div class="next" style="position: absolute; left: 1080px; top: 930px">
+        <p>
+          <button type="button" class="btn btn-default btn-lg btn-block">
+            <a href="genre.html">Why did nolan never get Best Movie Award></a>
+          </button>
+        </p>
+      </div>
+
+    <script type="text/javascript">
+      // Initialize the echarts instance based on the prepared dom
+      var myChart = echarts.init(document.getElementById('main'));
+      var option;
+      // Specify the configuration items and data for the chart
+      const pathSymbols = {
+  reindeer: 
+    'path://M9,0 L10.8,6.5 L17.5,6.2 L11.8,10 L14.3,16.3 L9,12 L3.7,16.3 L6.1,10 L0.4,6.2 L7.2,6.6',
+  
+};
+const labelSetting = {
+  show: false,
+  position: 'right',
+  offset: [10, 0],
+  fontSize: 16
+};
+option = {
+  legend: {
+    data: ['Nominations', 'Wins']
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  grid: {
+    containLabel: true,
+    left: 120
+  },
+  yAxis: {
+    data: ['Memento', 'Batman Begins', 'The Prestige', 'The Dark Knight', 'Inception','Interstellar', 'Dunkirk'],
+    inverse: true,
+    axisLine: { show: false },
+    axisTick: { show: false },
+    axisLabel: {
+      margin: 10,
+      fontSize: 14
+    },
+    axisPointer: {
+      label: {
+        show: false,
+        margin: 30
+      }
+    }
+  },
+  xAxis: {
+    splitLine: { show: false },
+    axisLabel: { show: false },
+    axisTick: { show: false },
+    axisLine: { show: false }
+  },
+  series: [
+    {
+      name: 'Nominations',
+      type: 'pictorialBar',
+      color: 'grey',
+      label: labelSetting,
+      symbolRepeat: true,
+      symbolSize: ['80%', '60%'],
+      barCategoryGap: '40%',
+      data: [
+        {
+          value: 2,
+          symbol: pathSymbols.reindeer,
+        },
+        {
+          value: 1,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: 2,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: 6,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: 8,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: 5,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: 8,
+          symbol: pathSymbols.reindeer
+        }
+      ]
+    },
+    {
+      name: 'Wins',
+      type: 'pictorialBar',
+      color: '#fcaf17',
+      barGap: '10%',
+      label: labelSetting,
+      symbolRepeat: true,
+      symbolSize: ['80%', '60%'],
+      data: [
+        {
+          value: null,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: null,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: null,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: 2,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: 4,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: 1,
+          symbol: pathSymbols.reindeer
+        },
+        {
+          value: 3,
+          symbol: pathSymbols.reindeer
+        }
+      ]
+    },
+
+  ]
+};
+
+option && myChart.setOption(option);
+    </script>
+<!-- 
+    <div id="div2" style="width: 1300px;height:1000px;position:absolute; left: 600px;top: 10px"></div>
+    <script type="text/javascript">
+      // Initialize the echarts instance based on the prepared dom
+      var myChart = echarts.init(document.getElementById('div2'));
+      var option;
+      // Specify the configuration items and data for the chart
+      option = {
+  // title: 'Oscar Nominations&Wins',
+  title: {
+      text: 'Oscar Nominations&Wins',
+      fontSize:40,
+      left: 'left'
+    },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{a} <br/>{b}'
+  },
+  legend: {
+    show:false,
+    data: [
+      'Best Original Screenplay', //1, 
+      'Best Film Editing', //1,4,77
+      'Best Achievement in Cinematography', //2,3,4,55,7
+      'Best Achievement in Art Direction', //3,4,5 
+      'Best Achievement in Makeup',//4
+      'Best Achievement in Sound Mixing',//4,55,6,77
+      'Best Achievement in Visual Effects',//4,55,66
+      'Best Achievement in Sound Editing', //44,55,6,77
+      'Best Performance by an Actor in a Supporting Role', //44
+      'Best Motion Picture of the Year',//5,7
+      'Best Writing, Original Screenplay',//5
+      'Best Achievement in Music Written for Motion Pictures, Original Score',//5,6,7
+      'Best Achievement in Production Design',//6,7
+      'Best Achievement in Directing',//7
+    ]
+  },
+  series: [
+
+    {
+      name: 'Oscar Nominations&Wins',
+      type: 'pie',
+      radius: ['45%', '60%'],
+      labelLine: {
+        length: 30
+      },
+      label: {
+        formatter: '{per|{d}%}\n {b|{b}}  ',
+        backgroundColor: '#F6F8FC',
+        borderColor: '#8C8D8E',
+        borderWidth: 1,
+        borderRadius: 4,
+        rich: {
+          a: {
+            color: '#6E7079',
+            lineHeight: 22,
+            align: 'center'
+          },
+          hr: {
+            borderColor: '#8C8D8E',
+            width: '100%',
+            borderWidth: 1,
+            height: 0
+          },
+          b: {
+            color: '#4C5058',
+            fontSize: 12,
+            fontWeight: 'bold',
+            lineHeight: 15,
+            align: 'left'
+          },
+          per: {
+            color: '#fff',
+            backgroundColor: '#4C5058',
+            padding: [3, 4],
+            borderRadius: 4,
+            align: 'left'
+          }
+        }
+      },
+      data: [
+        { value: 1, name: 'Best Original Screenplay:\nMemento'},
+        { value: 3, name: 'Best Film Editing:\nMemento, The Dark Knight, Dunkirk(🌟)'},
+        { value: 5, name: 'Best Achievement in Cinematography:\nBatman Begins, The Prestige,The Dark Knight,Inception(🌟),Dunkirk' },
+        { value: 3, name: 'Best Achievement in Art Direction:\nThe Prestige,The Dark Knight,Inception' },
+        { value: 1, name: 'Best Achievement in Makeup:\nThe Dark Knight'},
+        { value: 4, name: 'Best Achievement in Sound Mixing:\nThe Dark Knight, Inception(🌟), Interstellar, Dunkirk(🌟)'},
+        { value: 3, name: 'Best Achievement in Visual Effects:\nThe Dark Knight, Inception(🌟), Interstellar(🌟)'},
+        { value: 4, name: 'Best Achievement in Sound Editing:\nThe Dark Knight(🌟), Inception(🌟), Interstellar, Dunkirk'},
+        { value: 1, name: 'Best Performance by an Actor in a Supporting Role:\nThe Dark Knight(🌟)' },
+        { value: 2, name: 'Best Motion Picture of the Year:\nInception, Dunkirk' },
+        { value: 1, name: 'Best Writing, Original Screenplay:\nInception'},
+        { value: 3, name: 'Best Achievement in Music Written for Motion Pictures, Original Score:\nInception, Interstellar, Dunkirk'},
+        { value: 2, name: 'Best Achievement in Production Design:\nInterstellar, Dunkirk'},
+        { value: 1, name: 'Best Achievement in Directing:\nDunkirk'},
+      ]
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+    </script> -->
+
+    <!-- <div id="div2" style="width: 1300px;height:1200px;position:absolute; left: 600px;top: 10px"></div> -->
+<div id='title' style="position: absolute; left: 550px;top: 50px">
+  <p>
+    <img alt="1" src="./oscar-title.png" width="1275" height="180"/>
+</p>
+</div>
+<div id='nolan-sketch' style="position: absolute; left: 400px;top: 10px">
+  <p>
+    <img alt="1" src="./oscar-image.png" width="175" height="280"/>
+</p>
+</div>
+
+ 
+
+<figure class="highcharts-figure">
+    <div id="container" style="width: 1300px;height:600px;position:absolute; left: 600px;top: 300px">
+      <script type="text/javascript">
+      function getPointCategoryName(point, dimension) {
+  var series = point.series,
+    isY = dimension === 'y',
+    axis = series[isY ? 'yAxis' : 'xAxis'];
+  return axis.categories[point[isY ? 'y' : 'x']];
+}
+
+Highcharts.chart('container', {
+
+  chart: {
+    type: 'heatmap',
+    marginTop: 40,
+    marginBottom: 80,
+    plotBorderWidth: 2
+  },
+
+
+  title: {
+    text: ''
+  },
+
+  xAxis: {
+    categories: [
+      'Memento', 'Batman Begins', 'The Prestige', 'The Dark Knight', 'Inception','Interstellar', 'Dunkirk',//7
+    ],
+  },
+
+  yAxis: {
+    categories: [
+    'Original Screenplay', //1, 
+      'Film Editing', //1,4,77
+      'Cinematography', //2,3,4,55,7
+      'Art Direction', //3,4,5 
+      'Makeup',//4
+      'Sound Mixing',//4,55,6,77
+      'Visual Effects',//4,55,66
+      'Sound Editing', //44,55,6,77
+      'Actor Supporting Role', //44
+      'Motion Picture',//5,7
+      'Writing, Original Screenplay',//5
+      'Music Written ',//5,6,7
+      'Production Design',//6,7
+      'Directing',//7
+],
+    title: null,
+    reversed: true
+  },
+
+  accessibility: {
+    point: {
+      descriptionFormatter: function (point) {
+        var ix = point.index + 1,
+          xName = getPointCategoryName(point, 'x'),
+          yName = getPointCategoryName(point, 'y'),
+          val = point.value;
+        return ix + '. ' + xName + ' sales ' + yName + ', ' + val + '.';
+      }
+    }
+  },
+
+  colorAxis: {
+    min: 1,
+    max: 2,
+    minColor: '#808080',
+    maxColor: '#FCAF18'
+  },
+
+  legend: {
+    enabled: false,
+    align: 'right',
+    layout: 'vertical',
+    margin: 0,
+    verticalAlign: 'top',
+    y: 25,
+    symbolHeight: 280
+  },
+
+  tooltip: {
+    enabled: false,
+    formatter: function () {
+      return '<b>' + getPointCategoryName(this.point, 'x') + '</b> sold <br><b>' +
+        this.point.value + '</b> items on <br><b>' + getPointCategoryName(this.point, 'y') + '</b>';
+    }
+  },
+
+  series: [{
+    name: 'Sales per employee',
+    borderWidth: 1,
+    borderColor: '#ffffff',
+    data: [[0, 0, 1], [3, 1, 1], [0, 1, 1], [6, 1, 2], [1,2,1], [2,2,1], [3,2,1], [4,2,2], [6,2,1], [2,3,1], [3,3,1], [4,3,1], [3,4,1], [3,4,1], [4,5,2], [5,5,1], [6,5,2], [3,6,1],[4,6,2],[5,6,2],
+[3,7,2],[4,7,2],[5,7,1],[6,7,2],[3,8,2],[4,9,1],[6,9,1],[4,10,1],[4,11,1],[5,11,1],[6,11,1],[5,12,1],[6,12,1],[6,13,1] ],
+    dataLabels: {
+      enabled: false,
+      color: '#000000'
+    }
+  }],
+
+  responsive: {
+    rules: [{
+      condition: {
+        maxWidth: 500
+      },
+      chartOptions: {
+        yAxis: {
+          labels: {
+            formatter: function () {
+              return this.value.charAt(0);
+            }
+          }
+        }
+      }
+    }]
+  }
+
+});
+</script>
+    </div>
+</figure>
+
+      <!-- var chartDom = document.getElementById('div2'); -->
+<!-- var myChart = echarts.init(chartDom);
+var option;
+
+// prettier-ignore
+const hours = [
+      'Memento', 'Batman Begins', 'The Prestige', 'The Dark Knight', 'Inception','Interstellar', 'Dunkirk',//7
+    ];
+// prettier-ignore
+const days = [
+    'Original Screenplay', //1, 
+      'Film Editing', //1,4,77
+      'Cinematography', //2,3,4,55,7
+      'Art Direction', //3,4,5 
+      'Makeup',//4
+      'Sound Mixing',//4,55,6,77
+      'Visual Effects',//4,55,66
+      'Sound Editing', //44,55,6,77
+      'Actor Supporting Role', //44
+      'Motion Picture',//5,7
+      'Writing, Original Screenplay',//5
+      'Music Written ',//5,6,7
+      'Production Design',//6,7
+      'Directing',//7
+];
+// prettier-ignore
+const data = [[0, 0, 0.1], [1, 0, 1], [1, 3, 1], [1, 6, 3],]
+    .map(function (item) {
+    return [item[1], item[0], item[2] || '-'];
+});
+option = {
+  // tooltip: {
+  //   position: 'top'
+  // },
+  grid: {
+    height: '50%',
+    top: '10%'
+  },
+  xAxis: {
+    type: 'category',
+    data: hours,
+    splitArea: {
+      show: true
+    }
+  },
+  yAxis: {
+    type: 'category',
+    data: days,
+    splitArea: {
+      show: true
+    }
+  },
+  visualMap: {
+    min: 0,
+    max: 10,
+    calculable: false,
+    show: false,
+    orient: 'horizontal',
+    left: 'center',
+    bottom: '15%'
+  },
+  series: [
+    {
+      // name: 'Punch Card',
+      type: 'heatmap',
+      data: data,
+      label: {
+        show: false
+      },
+      // emphasis: {
+      //   itemStyle: {
+      //     shadowBlur: 10,
+      //     shadowColor: 'rgba(0, 0, 0, 0.5)'
+      //   }
+      // }
+    }
+  ]
+};
+
+option && myChart.setOption(option); -->
+
+        
+    </body>
+
+</html> 

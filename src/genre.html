@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        
+        <script src="echarts.js"></script>
+    </head>
+    <style> 
+
+    </style>
+    <body>
+       
+
+       <!-- <svg id="root" width="2280" height="800"> -->
+         <!-- <path class='link' d ="M 10 25 L 10 75  L 60 75 L 10 25" stroke = "red" stroke-width="2" stroke-dasharray= "0,10";/> -->
+       <!-- </svg> -->
+      <div id="main" style="width: 2000px;height:800px;left: 50px;top:30px"></div>
+    <script type="text/javascript">
+      // Initialize the echarts instance based on the prepared dom
+      var myChart = echarts.init(document.getElementById('main'));
+      var option;
+      // Specify the configuration items and data for the chart
+      option = {
+  tooltip: {
+    trigger: 'item',
+    triggerOn: 'mousemove'
+  },
+  animation: false,
+  series: [
+    {
+      type: 'sankey',
+      bottom: '10%',
+      emphasis: {
+        focus: 'adjacency'
+      },
+      data: [
+        { name: 'Nolan\'s Movie' },
+        { name: 'Mstery' }, // 3
+        { name: 'Thriller' }, // 7 2
+        // { name: 'Drama' }, // 5 9
+        { name: 'Action' }, // 6 0
+        { name: 'Adventure' }, // 3 1
+        { name: 'Sci-Fi'}, // 4 1
+        { name: 'Crime'}, // 1 1
+        { name: 'History'}, // 1 2
+        { name: 'War'}, // 1 1
+        { name: 'Biography'}, // 0 5
+        { name: 'Comedy'}, // 0 4
+        { name: 'Musical'}, // 0 1
+        { name: 'Fantasy'}, // 0 1
+        // { name: 'Sport'}, // 0 1
+        { name: 'Romance'}, // 0 2
+        { name: 'Oscar Best Movie'}
+      ],
+      links: [
+        { source: 'Nolan\'s Movie', target: 'Mstery', value: 3 },
+        { source: 'Nolan\'s Movie', target: 'Thriller', value: 7 },
+        { source: 'Nolan\'s Movie', target: 'Action', value: 6 },
+        { source: 'Nolan\'s Movie', target: 'Crime', value: 1 },
+        { source: 'Nolan\'s Movie', target: 'History', value: 1 },
+        { source: 'Nolan\'s Movie', target: 'War', value: 1 },
+        { source: 'Oscar Best Movie', target: 'Romance', value: 2 },
+        { source: 'Oscar Best Movie', target: 'Fantasy', value: 2 },
+        { source: 'Oscar Best Movie', target: 'Musical', value: 2 },
+        { source: 'Oscar Best Movie', target: 'Comedy', value: 4 },
+        { source: 'Oscar Best Movie', target: 'Biography', value: 5 },
+        { source: 'Oscar Best Movie', target: 'War', value: 1 },
+        { source: 'Nolan\'s Movie', target: 'Adventure', value: 3 },
+        // { source: 'Nolan\'s Movie', target: 'Drama', value: 5 },
+        { source: 'Nolan\'s Movie', target: 'Sci-Fi', value: 4 },
+        { source: 'Oscar Best Movie', target: 'History', value: 2 },
+        { source: 'Oscar Best Movie', target: 'Crime', value: 1 },
+        { source: 'Oscar Best Movie', target: 'Sci-Fi', value: 1 },
+        { source: 'Oscar Best Movie', target: 'Adventure', value: 1 },
+        // { source: 'Oscar Best Movie', target: 'Drama', value: 9 },
+        { source: 'Oscar Best Movie', target: 'Thriller', value: 2 },
+      ],
+      orient: 'vertical',
+      label: {
+        position: 'top',
+        fontSize: 20
+      },
+      lineStyle: {
+        color: 'source',
+        curveness: 0.5
+      }
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+
+    </script>
+
+    <div class="next" style="position: absolute; left: 180px; top: 830px">
+        <p>
+          <button type="button" class="btn btn-default btn-lg btn-block" style="width: 200px">
+            <a href="oscar.html">Back to Previous Page</a>
+          </button>
+        </p>
+      </div>
+
+     <div class="back" style="position: absolute; left: 180px; top: 760px">
+        <p>
+          <button type="button" class="btn btn-default btn-lg btn-block" style="width: 200px">
+            <a href="homepage.html">Back to HomePage</a>
+          </button>
+        </p>
+      </div>
+
+        
+    </body>
+
+</html> 

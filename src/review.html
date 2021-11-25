@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script>
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+
+      body {
+        background-color: #EBECE6;
+        background-size:1750px;}
+    </style>
+    <body>
+      <ul id="myTab" class="nav nav-tabs">
+<!--         <li class="active"><a href="#home" data-toggle="tab">
+          菜鸟教程</a></li> -->
+        <li class="active"><a href="#ios" data-toggle="tab">Christopher Nolan</a></li>
+        <li class="dropdown">
+          <a href="#" id="myTabDrop1" class="dropdown-toggle" 
+             data-toggle="dropdown">
+            Movies <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#bat" tabindex="-1" data-toggle="tab">The Dark Knight</a></li>
+            <li><a href="#ince" tabindex="-1" data-toggle="tab">Inception</a></li>
+            <li><a href="#inter" tabindex="-1" data-toggle="tab">Interstellar</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div id="myTabContent" class="tab-content">
+<!--         <div class="tab-pane fade in active" id="home">
+          <p>Navigator</p>
+        </div> -->
+        <div class="tab-pane fade in active" id="ios" style="position: absolute; left: 520px; top: 50px">
+                  <p>
+            <img alt="1" src="WordCloud/wordcloud.jpg" width="675" height="840"/>
+        </p>
+        </div>
+        <div class="tab-pane fade" id="bat" style="position: absolute; left: 320px; top: 80px">
+          <p>
+            <img alt="1" src="WordCloud/wordcloudBat.jpg" width="1175" height="700"/>
+        </p>
+        </div>
+        <div class="tab-pane fade" id="ince" style="position: absolute; left: 520px; top: 50px">
+          <p>
+            <img alt="1" src="WordCloud/wordcloudInception.jpg" width="675" height="840"/>
+        </p>
+        </div>
+        <div class="tab-pane fade" id="inter" style="position: absolute; left: 320px; top: 80px">
+          <p>
+            <img alt="1" src="WordCloud/wordcloudInter.jpg" width="1075" height="800"/>
+        </p>
+        </div>
+      </div>
+
+      <div class="back" style="position: absolute; left: 20px; top: 800px">
+        <p>
+          <button type="button" class="btn btn-default btn-lg btn-block">
+            <a href="homepage.html">Back to HomePage</a>
+          </button>
+        </p>
+      </div>
+      <script>
+      $(function(){
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+          // 获取已激活的标签页的名称
+          var activeTab = $(e.target).text(); 
+          // 获取前一个激活的标签页的名称
+          var previousTab = $(e.relatedTarget).text(); 
+          $(".active-tab span").html(activeTab);
+          $(".previous-tab span").html(previousTab);
+        });
+      });
+      </script>
+<!--         <div class="nolan" style="position: absolute; left: 20px; top: 500px">
+        <p>
+            <img alt="1" src="WordCloud/wordcloud.jpg" width="975" height="340"/>
+        </p>
+      </div>
+
+        <div class="nolan2" style="position: absolute; left: 60px; top: 500px">
+        <p>
+            <img alt="1" src="WordCloud/wordcloud.jpg" width="975" height="340"/>
+        </p>
+      </div> -->
+        
+    </body>
+
+</html> 

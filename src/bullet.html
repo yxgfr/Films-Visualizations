@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+    body {background-color:#FFFFFF;}
+</style>
+<body>
+
+<!-- <div id="map" style="width:1500px;height:1000px;"></div> -->
+
+<!-- <script src="../../dist/dist.js"></script>
+
+<script>
+
+    let data = {
+        "nodes": [
+            {
+                "name": "Nolan",
+                "role_id": 41,
+                "group": 1,
+                "avatar": "./img/nolan.png",
+                'r': 100,
+            },
+            {
+                "name": "Memento",
+                "role_id": 42,
+                "group": 2,
+                "avatar": "./img/momento.png"
+            },
+            {
+                "name": "Guy Pearce",
+                "role_id": 43,
+                "group": 3,
+                "avatar": "./img/guy.png"
+            },
+            {
+                "name": "Carrie-Anne",
+                "role_id": 44,
+                "group": 3,
+                "avatar": "./img/Canne.jpg"
+            },
+            {
+                "name": "Joe Pantoliano",
+                "role_id": 45,
+                "group": 3,
+                "avatar": "./img/Joe.png"
+            },
+            {
+                "name": "Insomnia",
+                "role_id": 46,
+                "group": 2,
+                "avatar": "./img/inso.png"
+            },
+            {
+                "name": "Al Pacino",
+                "role_id": 47,
+                "group": 3,
+                "avatar": "./img/ai.jpg"
+            },
+            {
+                "name": "Hilary Swank",
+                "role_id": 48,
+                "group": 3,
+                "avatar": "./img/hilary.jpg"
+            },
+            {
+                "name": "Martin Donovan",
+                "role_id": 49,
+                "group": 3,
+                "avatar": "./img/martin.jpg"
+            },
+            {
+                "name": "Nicky Katt",
+                "role_id": 50,
+                "group": 3,
+                "avatar": "./img/Nicky.jpg"
+            },
+            {
+                "name": "Paul Dooley",
+                "role_id": 51,
+                "group": 3,
+                "avatar": "./img/Paul.jpg"
+            },
+            {
+                "name": "Batman Begins",
+                "role_id": 52,
+                "group": 2,
+                "avatar": "./img/bat1.jpg"
+            },
+            {
+                "name": "Christian",
+                "role_id": 53,
+                "group": 3,
+                "avatar": "./img/cbale.jpg"
+            },
+            {
+                "name": "Michael",
+                "role_id": 54,
+                "group": 3,
+                "avatar": "./img/michael.jpg"
+            },
+            {
+                "name": "Liam",
+                "role_id": 55,
+                "group": 3,
+                "avatar": "./img/liam.jpg"
+            },
+            {
+                "name": "Katie",
+                "role_id": 56,
+                "group": 3,
+                "avatar": "./img/katie.jpg"
+            },
+            {
+                "name": "Gary",
+                "role_id": 57,
+                "group": 3,
+                "avatar": "./img/gary.jpg"
+            },
+            {
+                "name": "The Prestige",
+                "role_id": 58,
+                "group": 2,
+                "avatar": "./img/pres.jpg"
+            },
+            {
+                "name": "Hugh",
+                "role_id": 59,
+                "group": 3,
+                "avatar": "./img/hugh.jpg"
+            },
+            {
+                "name": "The Dark Night",
+                "role_id": 60,
+                "group": 2,
+                "avatar": "./img/dark.jpg"
+            },
+            {
+                "name": "Heath Ledger",
+                "role_id": 61,
+                "group": 3,
+                "avatar": "./img/health.jpg"
+            },
+            {
+                "name": "Aaron Eckhart",
+                "role_id": 62,
+                "group": 3,
+                "avatar": "./img/aaron.jpg"
+            },
+            {
+                "name": "Inception",
+                "role_id": 63,
+                "group": 2,
+                "avatar": "./img/incep.jpg"
+            },
+            {
+                "name": "Leonardo",
+                "role_id": 64,
+                "group": 1,
+                "avatar": "./img/leo.jpg"
+            },
+            {
+                "name": "Joseph",
+                "role_id": 65,
+                "group": 1,
+                "avatar": "./img/joseph.jpg"
+            },
+            {
+                "name": "Ellen",
+                "role_id": 66,
+                "group": 1,
+                "avatar": "./img/elliot.jpg"
+            },
+            {
+                "name": "Tom",
+                "role_id": 67,
+                "group": 1,
+                "avatar": "./img/tom.jpg"
+            },
+            {
+                "name": "The Dark Knight Rises",
+                "role_id": 68,
+                "group": 1,
+                "avatar": "./img/rise.jpg"
+            },
+            {
+                "name": "Anne Hathaway",
+                "role_id": 69,
+                "group": 1,
+                "avatar": "./img/anne.jpg"
+            },
+            {
+                "name": "Interstellar",
+                "role_id": 70,
+                "group": 1,
+                "avatar": "./img/inter.jpg"
+            },
+            {
+                "name": "Matthew",
+                "role_id": 71,
+                "group": 1,
+                "avatar": "./img/matt.jpg"
+            },
+            {
+                "name": "Mackenzie",
+                "role_id": 72,
+                "group": 1,
+                "avatar": "./img/mack.jpg"
+            },
+            {
+                "name": "Dunkirk",
+                "role_id": 73,
+                "group": 1,
+                "avatar": "./img/dun.jpg"
+            },
+            {
+                "name": "Fionn",
+                "role_id": 74,
+                "group": 1,
+                "avatar": "./img/fionn.jpg"
+            },
+            {
+                "name": "Glynn-Carney",
+                "role_id": 75,
+                "group": 1,
+                "avatar": "./img/glynn.jpg"
+            },
+            {
+                "name": "Jack Lowden",
+                "role_id": 76,
+                "group": 1,
+                "avatar": "./img/jack.jpg"
+            },
+            {
+                "name": "Harry",
+                "role_id": 77,
+                "group": 1,
+                "avatar": "./img/harry.jpg"
+            },
+            {
+                "name": "Tenet",
+                "f": 78,
+                "group": 1,
+                "avatar": "./img/tenet.jpg"
+            },
+            {
+                "name": "Robert",
+                "role_id": 79,
+                "group": 1,
+                "avatar": "./img/robert.jpg"
+            },
+            {
+                "name": "Elizabeth",
+                "role_id": 80,
+                "group": 1,
+                "avatar": "./img/eli.jpg"
+            },
+            {
+                "name": "John",
+                "role_id": 81,
+                "group": 1,
+                "avatar": "./img/john.jpg"
+            }
+        ],
+        "links": [
+            {
+                "source": 0,
+                "target": 1,
+                "relation": "Direct",
+                "color": "003087"
+            },
+            {
+                "source": 1,
+                "target": 2,
+                "relation": "Leonard",
+                "color": "734646"
+            },
+            {
+                "source": 1,
+                "target": 3,
+                "relation": "Natalie",
+                "color": "734646"
+            },
+            {
+                "source": 1,
+                "target": 4,
+                "relation": "Teddy",
+                "color": "734646"
+            },
+            {
+                "source": 0,
+                "target": 5,
+                "relation": "Direct",
+                "color": "003087"
+            },
+            {
+                "source": 5,
+                "target": 6,
+                "relation": "Will",
+                "color": "734646"
+            },
+            {
+                "source": 5,
+                "target": 7,
+                "relation": "Ellie",
+                "color": "734646"
+            },
+            {
+                "source": 5,
+                "target": 8,
+                "relation": "Hap",
+                "color": "734646"
+            },
+            {
+                "source": 5,
+                "target": 9,
+                "relation": "Fred",
+                "color": "734646"
+            },
+            {
+                "source": 5,
+                "target": 10,
+                "relation": "Chief",
+                "color": "734646"
+            },
+            {
+                "source": 0,
+                "target": 11,
+                "relation": "Direct",
+                "color": "003087"
+            },
+            {
+                "source": 11,
+                "target": 12,
+                "relation": "Batman",
+                "color": "734646"
+            },
+            {
+                "source": 11,
+                "target": 13,
+                "relation": "Alfred",
+                "color": "734646"
+            },
+            {
+                "source": 11,
+                "target": 14,
+                "relation": "Ducard",
+                "color": "734646"
+            },
+            {
+                "source": 11,
+                "target": 15,
+                "relation": "Rachel",
+                "color": "734646"
+            },
+            {
+                "source": 11,
+                "target": 16,
+                "relation": "Jim ",
+                "color": "734646"
+            },
+             {
+                "source": 0,
+                "target": 17,
+                "relation": "Direct",
+                "color": "003087"
+            },
+             {
+                "source": 17,
+                "target": 18,
+                "relation": "Robert",
+                "color": "734646"
+            },
+            {
+                "source": 17,
+                "target": 12,
+                "relation": "Alfred",
+                "color": "734646"
+            },
+            {
+                "source": 17,
+                "target": 13,
+                "relation": "Cutter",
+                "color": "734646"
+            },
+            {
+                "source": 0,
+                "target": 19,
+                "relation": "Direct",
+                "color": "003087"
+            },
+            {
+                "source": 19,
+                "target": 20,
+                "relation": "Joker",
+                "color": "734646"
+            },
+             {
+                "source": 19,
+                "target": 21,
+                "relation": "Harvey",
+                "color": "734646"
+            },
+            {
+                "source": 19,
+                "target": 12,
+                "relation": "Batman",
+                "color": "734646"
+            },
+            {
+                "source": 19,
+                "target": 13,
+                "relation": "Alfred",
+                "color": "734646"
+            },
+            {
+                "source": 0,
+                "target": 22,
+                "relation": "Direct",
+                "color": "003087"
+            },
+            {
+                "source": 22,
+                "target": 23,
+                "relation": "Cobb",
+                "color": "734646"
+            },
+            {
+                "source": 22,
+                "target": 24,
+                "relation": "Arthur",
+                "color": "734646"
+            },
+            {
+                "source": 22,
+                "target": 25,
+                "relation": "Ariadne",
+                "color": "734646"
+            },
+            {
+                "source": 22,
+                "target": 26,
+                "relation": "Eames",
+                "color": "734646"
+            },
+            {
+                "source": 0,
+                "target": 27,
+                "relation": "Direct",
+                "color": "003087"
+            },
+            {
+                "source": 27,
+                "target": 28,
+                "relation": "Selina",
+                "color": "734646"
+            },
+            {
+                "source": 27,
+                "target": 12,
+                "relation": "Batman",
+                "color": "734646"
+            },
+            {
+                "source": 27,
+                "target": 13,
+                "relation": "Alfred",
+                "color": "734646"
+            },
+            {
+                "source": 27,
+                "target": 16,
+                "relation": "Jim ",
+                "color": "734646"
+            },
+            {
+                "source": 27,
+                "target": 26,
+                "relation": "Bane",
+                "color": "734646"
+            },
+            {
+                "source": 27,
+                "target": 24,
+                "relation": "Blake",
+                "color": "734646"
+            },
+            {
+                "source": 0,
+                "target": 29,
+                "relation": "Direct",
+                "color": "003087"
+            },
+            {
+                "source": 29,
+                "target": 30,
+                "relation": "Cooper",
+                "color": "734646"
+            },
+             {
+                "source": 29,
+                "target": 31,
+                "relation": "Murph",
+                "color": "734646"
+            },
+            {
+                "source": 29,
+                "target": 28,
+                "relation": "Brand",
+                "color": "734646"
+            },
+            {
+                "source": 0,
+                "target": 32,
+                "relation": "Direct",
+                "color": "003087"
+            },
+            {
+                "source": 32,
+                "target": 33,
+                "relation": "Tommy",
+                "color": "734646"
+            },
+            {
+                "source": 32,
+                "target": 34,
+                "relation": "Peter",
+                "color": "734646"
+            },
+            {
+                "source": 32,
+                "target": 35,
+                "relation": "Collins",
+                "color": "734646"
+            },
+            {
+                "source": 32,
+                "target": 36,
+                "relation": "Alex",
+                "color": "734646"
+            },
+            {
+                "source": 0,
+                "target": 37,
+                "relation": "Direct",
+                "color": "003087"
+            },
+            {
+                "source": 37,
+                "target": 38,
+                "relation": "Neil",
+                "color": "734646"
+            },
+            {
+                "source": 37,
+                "target": 39,
+                "relation": "Kat",
+                "color": "734646"
+            },
+            {
+                "source": 37,
+                "target": 40,
+                "relation": "Protagonist",
+                "color": "734646"
+            },
+        ],
+    }
+
+    var map = document.querySelector('#map');
+    console.log(new RelationChart(map,data))
+</script> -->
+
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+/**
+ * Chart design taken from Samsung health app
+ */
+
+var chart = am4core.create("chartdiv", am4charts.XYChart);
+chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+
+chart.paddingBottom = 30;
+
+chart.data = [
+{
+    "name": "Michael Caine",
+    "steps": 7,
+    "href": "https://m.media-amazon.com/images/M/MV5BMjAwNzIwNTQ4Ml5BMl5BanBnXkFtZTYwMzE1MTUz._V1_UY317_CR7,0,214,317_AL_.jpg"
+}, 
+{
+    "name": "Christian Bale",
+    "steps": 4,
+    "href": "https://m.media-amazon.com/images/M/MV5BMTkxMzk4MjQ4MF5BMl5BanBnXkFtZTcwMzExODQxOA@@._V1_UX214_CR0,0,214,317_AL_.jpg"
+}, 
+{
+    "name": "Morgan Freeman",
+    "steps": 3,
+    "href": "https://m.media-amazon.com/images/M/MV5BMTc0MDMyMzI2OF5BMl5BanBnXkFtZTcwMzM2OTk1MQ@@._V1_UX214_CR0,0,214,317_AL_.jpg"
+}, 
+{
+    "name": "Tom Hardy",
+    "steps": 3,
+    "href": "https://m.media-amazon.com/images/M/MV5BMTQ3ODEyNjA4Nl5BMl5BanBnXkFtZTgwMTE4ODMyMjE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+}, 
+{
+    "name": "Gary Oldman",
+    "steps": 3,
+    "href": "https://m.media-amazon.com/images/M/MV5BMTc3NTM4MzQ5MV5BMl5BanBnXkFtZTcwOTE4MDczNw@@._V1_UY317_CR0,0,214,317_AL_.jpg"
+}, 
+{
+    "name": "Joseph Gordon-Levitt",
+    "steps": 2,
+    "href": "https://m.media-amazon.com/images/M/MV5BMTY3NTk0NDI3Ml5BMl5BanBnXkFtZTgwNDA3NjY0MjE@._V1_UY317_CR3,0,214,317_AL_.jpg"
+}, 
+{
+    "name": "Ken Watanabe",
+    "steps": 2,
+    "href": "https://m.media-amazon.com/images/M/MV5BMTQzMTUzNjc4Nl5BMl5BanBnXkFtZTcwMTUyODU2Mw@@._V1_UY317_CR3,0,214,317_AL_.jpg"
+}, 
+];
+
+var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "name";
+categoryAxis.renderer.grid.template.strokeOpacity = 0;
+categoryAxis.renderer.minGridDistance = 10;
+categoryAxis.renderer.labels.template.dy = 35;
+categoryAxis.renderer.tooltip.dy = 35;
+
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.renderer.inside = true;
+valueAxis.renderer.labels.template.fillOpacity = 0.3;
+valueAxis.renderer.grid.template.strokeOpacity = 0;
+valueAxis.min = 0;
+valueAxis.cursorTooltipEnabled = false;
+valueAxis.renderer.baseGrid.strokeOpacity = 0;
+
+var series = chart.series.push(new am4charts.ColumnSeries);
+series.dataFields.valueY = "steps";
+series.dataFields.categoryX = "name";
+series.tooltipText = "{valueY.value}";
+series.tooltip.pointerOrientation = "vertical";
+series.tooltip.dy = - 6;
+series.columnsContainer.zIndex = 100;
+
+var columnTemplate = series.columns.template;
+columnTemplate.width = am4core.percent(50);
+columnTemplate.maxWidth = 66;
+columnTemplate.column.cornerRadius(60, 60, 10, 10);
+columnTemplate.strokeOpacity = 0;
+
+series.heatRules.push({ target: columnTemplate, property: "fill", dataField: "valueY", min: am4core.color("#e5dc36"), max: am4core.color("#5faa46") });
+series.mainContainer.mask = undefined;
+
+var cursor = new am4charts.XYCursor();
+chart.cursor = cursor;
+cursor.lineX.disabled = true;
+cursor.lineY.disabled = true;
+cursor.behavior = "none";
+
+var bullet = columnTemplate.createChild(am4charts.CircleBullet);
+bullet.circle.radius = 30;
+bullet.valign = "bottom";
+bullet.align = "center";
+bullet.isMeasured = true;
+bullet.mouseEnabled = false;
+bullet.verticalCenter = "bottom";
+bullet.interactionsEnabled = false;
+
+var hoverState = bullet.states.create("hover");
+var outlineCircle = bullet.createChild(am4core.Circle);
+outlineCircle.adapter.add("radius", function (radius, target) {
+    var circleBullet = target.parent;
+    return circleBullet.circle.pixelRadius + 10;
+})
+
+var image = bullet.createChild(am4core.Image);
+image.width = 60;
+image.height = 60;
+image.horizontalCenter = "middle";
+image.verticalCenter = "middle";
+image.propertyFields.href = "href";
+
+image.adapter.add("mask", function (mask, target) {
+    var circleBullet = target.parent;
+    return circleBullet.circle;
+})
+
+var previousBullet;
+chart.cursor.events.on("cursorpositionchanged", function (event) {
+    var dataItem = series.tooltipDataItem;
+
+    if (dataItem.column) {
+        var bullet = dataItem.column.children.getIndex(1);
+
+        if (previousBullet && previousBullet != bullet) {
+            previousBullet.isHover = false;
+        }
+
+        if (previousBullet != bullet) {
+
+            var hs = bullet.states.getKey("hover");
+            hs.properties.dy = -bullet.parent.pixelHeight + 30;
+            bullet.isHover = true;
+
+            previousBullet = bullet;
+        }
+    }
+})
+
+}); // end am4core.ready()
+</script>
+
+ <div class="back" style="position: absolute; left: 180px; top: 730px">
+        <p>
+          <button type="button" class="btn btn-default btn-lg btn-block" style="width: 200px">
+            <a href="homepage.html">Back to HomePage</a>
+          </button>
+        </p>
+      </div>
+
+      <div class="next" style="position: absolute; left: 180px; top: 800px">
+        <p>
+          <button type="button" class="btn btn-default btn-lg btn-block" style="width: 200px">
+            <a href="relation-chart-master/index.html">Back to Previous Page</a>
+          </button>
+        </p>
+      </div>
+
+<!-- HTML -->
+<div id="chartdiv" style="width:1200px;height:500px;"></div>
+</body>
+</html>
