@@ -1,0 +1,44 @@
+[{
+      name: 'Memento',
+      label: '16-Mar-01',
+      description: 'The film starts with a Polaroid photograph of a dead man. As the sequence plays backward, the photo reverts to its undeveloped state, entering the camera before the man is shot in the head. The film then continues, alternating between black-and-white and color sequences.'
+    }, {
+      name: 'Insomnia',
+      label: '24-May-02',
+      description: 'In the small fishing town of Nightmute, Alaska, 17-year-old Kay Connell is found murdered. Los Angeles Police Department (LAPD) detectives Will Dormer and Hap Eckhart are sent to assist the local police with their investigation, at the request of police chief Nyback, an old colleague of Dormer. Ellie Burr, a young local detective who is also a fan of Dormer investigative work, picks them up when they arrive. Back in Los Angeles, Internal Affairs is investigating one of Dormer past cases. Flying to Alaska, Eckhart reveals that he is going to testify against Dormer in exchange for immunity, to which Dormer responds that many criminals whom he helped to convict using questionable evidence could go free if their cases are reopened.'
+    }, {
+      name: 'Batman Begins',
+      label: '15-Jun-05',
+      description: 'As a child in Gotham City, Bruce Wayne falls down a dry well and is attacked by a swarm of bats, developing a fear of bats. Attending the opera with his parents, Thomas and Martha, Bruce becomes frightened by performers masquerading as bats and asks to leave. Outside, mugger Joe Chill murders Bruce parents in front of him, and the orphaned Bruce is raised by the family butler, Alfred Pennyworth.'
+    }, {
+      name: 'The Prestige',
+      label: '20-Oct-06',
+      description: 'In 1890s London, Robert Angier and Alfred Borden work as shills for a magician, under the mentorship of John Cutter, an engineer who designs stage magic (a job termed ingenieur in the film). During a water tank trick, Angier wife Julia fails to escape and drowns. The devastated Angier holds Borden responsible for using a riskier rope knot than they normally used in the performance, thereby causing her death. At Julia funeral, Borden denies knowing which knot he had tied and the two men become bitter enemies.'
+    }, {
+      name: 'The Dark Knight',
+      label: '18-Jul-08',
+      description: 'A gang of criminals robs a Gotham City mob bank, murdering each other for a higher share until only the Joker remains; he escapes with the money. Batman, District Attorney Harvey Dent and Lieutenant Jim Gordon form an alliance to rid Gotham of organized crime. Bruce Wayne is impressed with Dent idealism and offers to support his career; he believes that, with Dent as Gotham protector, he can give up being Batman and lead a normal life with Rachel Dawes—even though she and Dent are dating.'
+    }, {
+      name: 'Inception',
+      label: '16-Jul-10',
+      description: 'Dominick "Dom" Cobb and Arthur are "extractors": they perform corporate espionage using experimental military technology to infiltrate their target subconscious and extract information through a shared dream world. Their latest target, Saito, reveals he arranged their mission to test Cobb for a seemingly impossible job: implanting an idea in a person subconscious, or "inception". Saito wants Cobb to convince Robert, the son of Saito ailing competitor Maurice Fischer, to dissolve his father company. In return, Saito promises to clear Cobb criminal status, which prevents him from returning home to his children.'
+    },
+    {
+      name: 'The Dark Knight Rises',
+      label: '20-Jul-12',
+      description: 'Bane, a mysterious militant leader and former member of the League of Shadows, abducts nuclear physicist Dr. Leonid Pavel from a CIA aircraft over Uzbekistan before crashing the aircraft.'
+    }, {
+      name: 'Interstellar',
+      label: '05-Nov-14',
+      description: 'In 2067,[4] crop blights and dust storms threaten humanity survival. Corn is the last viable crop. The world also regresses into a post-truth society where younger generations are taught false history, including the faking of the Apollo moon missions. Widowed engineer and former NASA pilot Joseph Cooper is now a farmer. Living with him are his father-in-law, Donald; his 15-year-old son, Tom Cooper, and 10-year-old daughter, Murphy "Murph" Cooper. After a dust storm, strange dust patterns inexplicably appear on Murphy bedroom floor; she attributes the anomaly to a ghost. Cooper eventually deduces the patterns were caused by gravity variations and that they represent geographic coordinates in binary code. Cooper follows the coordinates to a secret NASA facility headed by Professor John Brand, Cooper former supervisor. Professor Brand says gravitational anomalies have happened elsewhere. Forty-eight years earlier, unknown beings positioned a wormhole near Saturn, opening a path to a distant galaxy with twelve potentially habitable worlds located near a black hole named Gargantua. Twelve volunteers traveled through the wormhole to individually survey the planets. Astronauts Miller, Edmunds, and Mann reported positive results. Based on their data, Professor Brand conceived two plans to ensure humanity survival. Plan A involves developing a gravitational propulsion theory to propel colonies into space, while Plan B involves launching the Endurance spacecraft carrying 5,000 frozen human embryos to colonize a habitable planet.'
+    }, {
+      name: 'Dunkirk',
+      label: '13-Jul-17',
+      description: 'In 1940, during the Battle of France, Allied soldiers have retreated to Dunkirk. Tommy, a young British private, is the sole survivor of a German ambush. At the beach, he finds thousands of troops awaiting evacuation and meets Gibson, who is burying a body. After a Luftwaffe dive-bomber attack, they attempt to get aboard a hospital ship, but are ordered off. The ship is sunk by dive bombers; Tommy saves another soldier, Alex. They get aboard a destroyer, only to have it torpedoed and sunk before it can depart.'
+    },
+    {
+      name: 'Tenet',
+      label: '03-Sep-20',
+      description: 'An unnamed CIA agent—referred to as "The Protagonist"—participates in an undercover SWAT operation at a Kiev opera house, rescuing an exposed spy and capturing a strange artifact. He is saved from being shot by a masked soldier with a distinctive red tag on his rucksack, who appears to have "un-fired" a bullet through the terrorist (thus killing him). The Protagonist is captured by a Russian agent and tortured to reveal his mission objectives, before he catches an opportunity and consumes a cyanide pill. He later awakens and learns the mission was a test and that the pill was fake. He is also informed that the same organization that captured him stole the artifact and killed all his colleagues from the mission. In order to combat the people who killed his colleagues, the Protagonist boss points him to a secret organisation called "Tenet", leading him to Laura, a scientist studying bullets whose entropy has been "inverted" so that they move backward through time.'
+    }
+]

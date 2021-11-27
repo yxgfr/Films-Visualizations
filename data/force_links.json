@@ -1,0 +1,302 @@
+
+            {
+                "source": 0,
+                "target": 1,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+            {
+                "source": 1,
+                "target": 2,
+                "relation": "Leonard",
+                "color": "6695EC"
+            },
+            {
+                "source": 1,
+                "target": 3,
+                "relation": "Natalie",
+                "color": "6695EC"
+            },
+            {
+                "source": 1,
+                "target": 4,
+                "relation": "Teddy",
+                "color": "6695EC"
+            },
+            {
+                "source": 0,
+                "target": 5,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+            {
+                "source": 5,
+                "target": 6,
+                "relation": "Will",
+                "color": "6695EC"
+            },
+            {
+                "source": 5,
+                "target": 7,
+                "relation": "Ellie",
+                "color": "6695EC"
+            },
+            {
+                "source": 5,
+                "target": 8,
+                "relation": "Hap",
+                "color": "6695EC"
+            },
+            {
+                "source": 5,
+                "target": 9,
+                "relation": "Fred",
+                "color": "6695EC"
+            },
+            {
+                "source": 5,
+                "target": 10,
+                "relation": "Chief",
+                "color": "6695EC"
+            },
+            {
+                "source": 0,
+                "target": 11,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+            {
+                "source": 11,
+                "target": 12,
+                "relation": "Batman",
+                "color": "6695EC"
+            },
+            {
+                "source": 11,
+                "target": 13,
+                "relation": "Alfred",
+                "color": "6695EC"
+            },
+            {
+                "source": 11,
+                "target": 14,
+                "relation": "Ducard",
+                "color": "6695EC"
+            },
+            {
+                "source": 11,
+                "target": 15,
+                "relation": "Rachel",
+                "color": "6695EC"
+            },
+            {
+                "source": 11,
+                "target": 16,
+                "relation": "Jim ",
+                "color": "6695EC"
+            },
+             {
+                "source": 0,
+                "target": 17,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+             {
+                "source": 17,
+                "target": 18,
+                "relation": "Robert",
+                "color": "6695EC"
+            },
+            {
+                "source": 17,
+                "target": 12,
+                "relation": "Alfred",
+                "color": "6695EC"
+            },
+            {
+                "source": 17,
+                "target": 13,
+                "relation": "Cutter",
+                "color": "6695EC"
+            },
+            {
+                "source": 0,
+                "target": 19,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+            {
+                "source": 19,
+                "target": 20,
+                "relation": "Joker",
+                "color": "6695EC"
+            },
+             {
+                "source": 19,
+                "target": 21,
+                "relation": "Harvey",
+                "color": "6695EC"
+            },
+            {
+                "source": 19,
+                "target": 12,
+                "relation": "Batman",
+                "color": "6695EC"
+            },
+            {
+                "source": 19,
+                "target": 13,
+                "relation": "Alfred",
+                "color": "6695EC"
+            },
+            {
+                "source": 0,
+                "target": 22,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+            {
+                "source": 22,
+                "target": 23,
+                "relation": "Cobb",
+                "color": "6695EC"
+            },
+            {
+                "source": 22,
+                "target": 24,
+                "relation": "Arthur",
+                "color": "6695EC"
+            },
+            {
+                "source": 22,
+                "target": 25,
+                "relation": "Ariadne",
+                "color": "6695EC"
+            },
+            {
+                "source": 22,
+                "target": 26,
+                "relation": "Eames",
+                "color": "6695EC"
+            },
+            {
+                "source": 0,
+                "target": 27,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+            {
+                "source": 27,
+                "target": 28,
+                "relation": "Selina",
+                "color": "6695EC"
+            },
+            {
+                "source": 27,
+                "target": 12,
+                "relation": "Batman",
+                "color": "6695EC"
+            },
+            {
+                "source": 27,
+                "target": 13,
+                "relation": "Alfred",
+                "color": "6695EC"
+            },
+            {
+                "source": 27,
+                "target": 16,
+                "relation": "Jim ",
+                "color": "6695EC"
+            },
+            {
+                "source": 27,
+                "target": 26,
+                "relation": "Bane",
+                "color": "6695EC"
+            },
+            {
+                "source": 27,
+                "target": 24,
+                "relation": "Blake",
+                "color": "6695EC"
+            },
+            {
+                "source": 0,
+                "target": 29,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+            {
+                "source": 29,
+                "target": 30,
+                "relation": "Cooper",
+                "color": "6695EC"
+            },
+             {
+                "source": 29,
+                "target": 31,
+                "relation": "Murph",
+                "color": "6695EC"
+            },
+            {
+                "source": 29,
+                "target": 28,
+                "relation": "Brand",
+                "color": "6695EC"
+            },
+            {
+                "source": 0,
+                "target": 32,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+            {
+                "source": 32,
+                "target": 33,
+                "relation": "Tommy",
+                "color": "6695EC"
+            },
+            {
+                "source": 32,
+                "target": 34,
+                "relation": "Peter",
+                "color": "6695EC"
+            },
+            {
+                "source": 32,
+                "target": 35,
+                "relation": "Collins",
+                "color": "6695EC"
+            },
+            {
+                "source": 32,
+                "target": 36,
+                "relation": "Alex",
+                "color": "6695EC"
+            },
+            {
+                "source": 0,
+                "target": 37,
+                "relation": "Direct",
+                "color": "32CD32"
+            },
+            {
+                "source": 37,
+                "target": 38,
+                "relation": "Neil",
+                "color": "6695EC"
+            },
+            {
+                "source": 37,
+                "target": 39,
+                "relation": "Kat",
+                "color": "6695EC"
+            },
+            {
+                "source": 37,
+                "target": 40,
+                "relation": "Protagonist",
+                "color": "6695EC"
+            },
+                    ]
